@@ -1,0 +1,70 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.body-utama{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Grouping selector */
+h1, h2 {
+    color: brown;
+}
+
+/* Descendant selector */
+.navbar a {
+    color: white;
+}
+
+/* Pseudo-class */
+.navbar a:hover {
+    color: brown;
+}
+
+.navbar {
+    background-color: #969969;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+.menu-section {
+    display: flex;
+    gap: 30px;
+}
+.menu-section td:hover{
+    color: rebeccapurple;
+    background-color: rgb(232, 231, 231);
+}
+
+.menu-food, .menu-drinks {
+    background-color: white;
+    flex: 1;
+    text-align: center;
+    border: rgb(249, 224, 197) solid 2px;
+    border-radius: 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+
+th, td {
+    padding: 10px 100px;
+}
