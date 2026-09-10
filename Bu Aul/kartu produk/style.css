@@ -1,0 +1,41 @@
+/* Tugas Pertemuan 3 - E. Latihan Praktik Mandiri: Membuat 3 Kartu Produk */
+
+#judul-utama {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #1F4E79;
+}
+
+/* Satu aturan dipakai ketiga kartu, jadi width, padding, border,
+   dan margin-nya sudah pasti konsisten */
+.kartu-produk {
+    box-sizing: border-box;   /* width 250px SUDAH termasuk padding + border */
+    width: 250px;
+    padding: 16px;
+    border: 2px solid #1F4E79;
+    margin: 20px auto;        /* 20px atas-bawah, auto supaya kartu di tengah */
+    background-color: #EAF1F8;
+    font-family: Arial, sans-serif;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.kartu-produk h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #1F4E79;
+}
+
+.kartu-produk .harga {
+    margin: 8px 0 0 0;
+    font-weight: bold;
+    color: #C00000;
+}
+
+/* HASIL PENGAMATAN
+   1. Karena pakai box-sizing: border-box, lebar kartu tetap 250px.
+      Kalau border-box dihapus, lebarnya jadi 250 + (16+16) + (2+2) = 286px.
+   2. Tiap kartu punya margin-bottom 20px dan margin-top 20px, tapi jarak
+      antarkartu yang terbentuk hanya 20px, BUKAN 40px. Ini karena margin
+      collapsing (margin runtuh): margin vertikal antarelemen block tidak
+      dijumlahkan, yang dipakai hanya nilai terbesar. */
